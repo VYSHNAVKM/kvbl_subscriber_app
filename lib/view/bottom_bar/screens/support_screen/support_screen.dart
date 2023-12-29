@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kvbl_subscriber_app/utils/color_contant.dart';
 import 'package:kvbl_subscriber_app/utils/textstyle_contant.dart';
+import 'package:kvbl_subscriber_app/view/bottom_bar/screens/support_screen/widgets/create_ticket/create_ticket_screen.dart';
+import 'package:kvbl_subscriber_app/view/bottom_bar/screens/support_screen/widgets/self_help/self_help_screen.dart';
+import 'package:kvbl_subscriber_app/view/bottom_bar/screens/support_screen/widgets/ticket_history/ticket_history_screen.dart';
 
 class SupportScreen extends StatefulWidget {
   const SupportScreen({super.key});
@@ -73,7 +76,13 @@ class _SupportScreenState extends State<SupportScreen> {
                       style: subtextdark,
                     ),
                     trailing: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SelfHelpScreen(),
+                              ));
+                        },
                         icon: Icon(
                           Icons.arrow_forward_ios,
                           color: primarycolordark,
@@ -96,7 +105,13 @@ class _SupportScreenState extends State<SupportScreen> {
                       style: subtitlestyle,
                     ),
                     trailing: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => TicketHistoryScreen(),
+                              ));
+                        },
                         icon: Icon(
                           Icons.arrow_forward_ios,
                           color: primarycolordark,
@@ -119,7 +134,13 @@ class _SupportScreenState extends State<SupportScreen> {
                       style: subtitlestyle,
                     ),
                     trailing: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => CreateTicketScreen(),
+                              ));
+                        },
                         icon: Icon(
                           Icons.arrow_forward_ios,
                           color: primarycolordark,

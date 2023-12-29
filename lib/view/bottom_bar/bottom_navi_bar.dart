@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kvbl_subscriber_app/utils/color_contant.dart';
 import 'package:kvbl_subscriber_app/view/bottom_bar/screens/home_screen/home_screen.dart';
+import 'package:kvbl_subscriber_app/view/bottom_bar/screens/plan_screen/plan_screen.dart';
 import 'package:kvbl_subscriber_app/view/bottom_bar/screens/profile_screen/profile_screen.dart';
 import 'package:kvbl_subscriber_app/view/bottom_bar/screens/support_screen/support_screen.dart';
 
@@ -16,9 +17,7 @@ class _BottomNaviBarState extends State<BottomNaviBar> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    Text(
-      'Index 1: Business',
-    ),
+    PlanScreen(),
     SupportScreen(),
     ProfileScreen()
   ];

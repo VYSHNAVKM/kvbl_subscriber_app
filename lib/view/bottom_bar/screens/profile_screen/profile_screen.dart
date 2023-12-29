@@ -26,20 +26,29 @@ class _ProfileScreenState extends State<ProfileScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CircleAvatar(
-                  backgroundColor: primarycolordark,
-                  radius: 70,
-                ),
-                ElevatedButton(
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStatePropertyAll(Colors.blue.shade900)),
-                    onPressed: () {},
-                    child: Text(
-                      'Edit Profile',
-                      style: subtextlight,
-                    ))
+                Stack(children: [
+                  CircleAvatar(
+                    backgroundColor: primarycolordark,
+                    radius: 70,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 110, top: 90),
+                    child: CircleAvatar(
+                      radius: 20,
+                      backgroundColor: primarycolorlight,
+                      child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.edit,
+                            color: primarycolordark,
+                          )),
+                    ),
+                  )
+                ]),
               ],
+            ),
+            SizedBox(
+              height: 10,
             ),
             Text(
               'VYSHNAV K M',
