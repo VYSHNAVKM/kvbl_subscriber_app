@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kvbl_subscriber_app/utils/color_contant.dart';
 import 'package:kvbl_subscriber_app/utils/textstyle_contant.dart';
 
 class CreateTicketScreen extends StatefulWidget {
